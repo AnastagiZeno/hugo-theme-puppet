@@ -783,7 +783,7 @@ samp {
 }
 
 footer {
-  font-size: 20px;
+  font-size: 10px;
   padding: 50px 0 65px;
   .list-inline {
     margin: 0;
@@ -824,7 +824,7 @@ footer {
   &:hover,
   &:focus {
     background-color: $brand-primary;
-    border: 1px solid $brand-primary;
+    border: hidden;
     color: white;
   }
 }
@@ -832,7 +832,7 @@ footer {
 // Pager Styling
 
 .pager {
-  margin: 20px 0 0 !important;
+  margin: 40px 0 20px 0 !important;
   padding: 0px !important;
 
   li {
@@ -841,14 +841,14 @@ footer {
       @include sans-serif;
       text-transform: uppercase;
       font-size: 13px;
-      font-weight: 800;
+      font-weight: 500;
       letter-spacing: 1px;
       padding: 10px;
       background-color: white;
       border-radius: 0;
       @media only screen and (min-width: 768px) {
-        font-size: 14px;
-        padding: 15px 25px;
+        font-size: 12px;
+        padding: 2px 2px;
       }
     }
 
@@ -859,7 +859,6 @@ footer {
     > a:focus {
       color: white;
       background-color: $brand-primary;
-      border: 1px solid $brand-primary;
 
       // V1.6 display title
       > span {
