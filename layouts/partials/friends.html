@@ -1,7 +1,6 @@
-{{ $friends := .Site.Params.friends }}
+{{ $friends := .Site.Params.azeroth }}
 {{ with $friends }}
 <hr>
-<h5>FRIENDS</h5>
 <ul class="list-inline">
   {{ range $friends }}
   <li><a href="{{ .url }}" target="_blank">{{ .name }}</a></li>
