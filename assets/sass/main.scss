@@ -153,6 +153,14 @@ samp {
     // display: inline-block;
     // safari has bugs on word-break on inline elements.
     color: #337ab7;
+
+    // bx-add
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    // bx-add-done
+
     // different to $brand-primary
     &:hover,
     &:focus {
@@ -847,7 +855,8 @@ footer {
       background-color: white;
       border-radius: 0;
       @media only screen and (min-width: 768px) {
-        font-size: 12px;
+        color: rosybrown !important;
+        font-size: 13px;
         padding: 2px 2px;
       }
     }
@@ -857,12 +866,13 @@ footer {
     }
     > a:hover,
     > a:focus {
-      color: white;
-      background-color: $brand-primary;
+      color: black;
+      border-radius: 60px 25px 45px 30px;
+      background-color: seashell !important;
 
       // V1.6 display title
       > span {
-        color: white;
+        color: gray;
       }
     }
   }
@@ -908,7 +918,7 @@ img::-moz-selection {
   display: none !important;
 }
 .tags {
-  margin-bottom: -5px;
+  margin-bottom: 5px;
   &.tags-sup {
     a,
     .tag {
